@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-postamat14-уведомление-e",
+  "editForm": "i-i-s-postamat14-уведомление-e",
+  "external": false,
+  "caption": "Уведомление",
+  "name": "IISPostamat14УведомлениеL",
+  "className": "УведомлениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat14-уведомление",
+      "modelProjection": "УведомлениеL"
+    }
+  ]
+}

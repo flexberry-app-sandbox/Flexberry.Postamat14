@@ -1,0 +1,43 @@
+import { moduleForModel, test } from 'ember-qunit';
+
+moduleForModel('i-i-s-postamat14-логистика', 'Unit | Serializer | i-i-s-postamat14-логистика', {
+  // Specify the other units that are required for this test.
+  needs: [
+    'serializer:i-i-s-postamat14-логистика',
+    'service:syncer',
+    'transform:file',
+    'transform:decimal',
+    'transform:guid',
+
+    'transform:i-i-s-postamat14-состояние',
+    'transform:i-i-s-postamat14-статус',
+    'transform:i-i-s-postamat14-статусы',
+
+    'model:i-i-s-postamat14-ключ',
+    'model:i-i-s-postamat14-логистика',
+    'model:i-i-s-postamat14-пользователь',
+    'model:i-i-s-postamat14-постамат',
+    'model:i-i-s-postamat14-посылка',
+    'model:i-i-s-postamat14-регистр-посылки',
+    'model:i-i-s-postamat14-регистр-хран',
+    'model:i-i-s-postamat14-служба-доставки',
+    'model:i-i-s-postamat14-уведомление',
+    'model:i-i-s-postamat14-хранение',
+    'model:i-i-s-postamat14-ячейка',
+    'validator:ds-error',
+    'validator:presence',
+    'validator:number',
+    'validator:date',
+    'validator:belongs-to',
+    'validator:has-many',
+  ],
+});
+
+// Replace this with your real tests.
+test('it serializes records', function(assert) {
+  let record = this.subject();
+
+  let serializedRecord = record.serialize();
+
+  assert.ok(serializedRecord);
+});
